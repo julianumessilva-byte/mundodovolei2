@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundo do Vôlei 🏐</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Cabeçalho / Navegação -->
+    <header>
+        <h1>🏐 Mundo do Vôlei</h1>
+        <nav>
+            <ul>
+                <li><a href="#artigos">Artigos</a></li>
+                <li><a href="#galeria">Galeria</a></li>
+                <li><a href="#quiz">Quiz</a></li>
+                <li><a href="#jogos">Jogos Interativos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Banner Principal -->
+    <section class="hero">
+        <h2>Tudo sobre o esporte que move paixões!</h2>
+        <p>Notícias, curiosidades, testes de conhecimento e diversão.</p>
+    </section>
+
+    <!-- Seção de Artigos e Textos -->
+    <section id="artigos" class="container">
+        <h2>Artigos & Notícias</h2>
+        <div class="cards-grid">
+            <article class="card">
+                <h3>A Evolução do Saque Viagem</h3>
+                <p>Descubra como o saque viagem revolucionou o vôlei moderno nas últimas décadas e se tornou uma das armas mais potentes do jogo.</p>
+            </article>
+            <article class="card">
+                <h3>A Importância do Líbero</h3>
+                <p>Criada em 1998, a posição de líbero mudou a dinâmica defensiva das equipes. Entenda as regras e estratégias dessa posição especialista.</p>
+            </article>
+        </div>
+    </section>
+
+    <!-- Seção de Fotos -->
+    <section id="galeria" class="container">
+        <h2>Galeria de Fotos</h2>
+        <div class="galeria-grid">
+            <img src="https://images.unsplash.com/photo-1612872087720-bb876e2e67d1?auto=format&fit=crop&w=600&q=80" alt="Ataque no vôlei">
+            <img src="https://images.unsplash.com/photo-1592656094267-764a45160876?auto=format&fit=crop&w=600&q=80" alt="Bola de vôlei na quadra">
+            <img src="https://images.unsplash.com/photo-1519766304817-4f37bda74a29?auto=format&fit=crop&w=600&q=80" alt="Jogo de vôlei de praia">
+        </div>
+    </section>
+
+    <!-- Seção de Quiz -->
+    <section id="quiz" class="container">
+        <h2>Quiz: O quanto você entende de vôlei?</h2>
+        <div class="quiz-box">
+            <p id="pergunta">1. Quantos jogadores de cada time entram em quadra no vôlei tradicional?</p>
+            <div class="opcoes">
+                <button onclick="responder(false)">a) 5 jogadores</button>
+                <button onclick="responder(true)">b) 6 jogadores</button>
+                <button onclick="responder(false)">c) 7 jogadores</button>
+            </div>
+            <p id="resultado-quiz"></p>
+        </div>
+    </section>
+
+    <!-- Seção de Jogos Interativos -->
+    <section id="jogos" class="container">
+        <h2>Jogos Interativos</h2>
+        <div class="card">
+            <h3>Mini Game: Contador de Toques</h3>
+            <p>No vôlei, cada time só pode dar no máximo 3 toques na bola antes de passá-la. Treine seu ritmo!</p>
+            <button id="btn-toque" onclick="darToque()">Dar um toque na bola 🏐</button>
+            <p>Toques atuais: <span id="contador">0</span></p>
+            <p id="msg-jogo"></p>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>Desenvolvido para fãs de vôlei | Hospedado no GitHub Pages</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
